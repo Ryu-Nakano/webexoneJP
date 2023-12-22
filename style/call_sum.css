@@ -1,21 +1,54 @@
-.btn--green,
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+.title {
+  background-color: #078855;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 0px solid black;
+  padding: 10px;
+}
+
+.table-header {
+  background-color: #e0e0e0;
+}
+
+.table-body {
+  background-color: #ffffff;
+}
+
+
 a.btn--green {
-	width: 300px;
+	width: 50px;
 	color: #fff;
 	background-color: #078855;
 }
 
-.btn--green:hover,
-a.btn--green:hover {
-	color: #fff;
-	background-color: #078855;
-}
 
-a.btn--radius {
-	border-radius: 100vh;
-}
-
-.btn,
 a.btn,
 button.btn {
 	font-size: 1.1rem;
@@ -38,7 +71,28 @@ button.btn {
 	border-radius: 0.5rem;
 }
 
-input[type=text]{
-	width:100px;
-	height:35px;
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:not(:first-child) {
+  margin-top: 10px;
+}
+
+ul li:before {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -18px;
+  width: 10px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-bottom: 1px solid red;
+  border-left: 2px solid red;
+  content: "";
 }
